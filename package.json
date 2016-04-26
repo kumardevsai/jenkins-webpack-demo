@@ -1,0 +1,27 @@
+{
+  "name": "jenkins-webpack-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && webpack -p --json -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wyvernnot/jenkins-webpack-demo.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wyvernnot/jenkins-webpack-demo/issues"
+  },
+  "homepage": "https://github.com/wyvernnot/jenkins-webpack-demo#readme",
+  "devDependencies": {
+    "file-loader": "^0.8.5",
+    "html-webpack-plugin": "^2.16.0",
+    "jquery": "^2.2.3",
+    "rimraf": "^2.5.2",
+    "webpack": "^1.13.0"
+  }
+}
