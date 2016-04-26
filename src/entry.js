@@ -6,4 +6,10 @@ console.log(__webpack_require__);
 $('body')
   .after($('<pre>').text(content))
   .after($('<pre>').text(JSON.stringify(process.env, null, 2)))
-  .after($('<a>').text(process.env.BUILD_URL));
+  .after($('<a>').text(process.env.BUILD_URL))
+  .after($('<button>').text('click').click(function () {
+    require.ensure([], function (require) {
+      var lazy = require('./lazy');
+      lazy('haha')
+    })
+  }));
