@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "dev": "npm run clean && webpack --json -w",
-    "dist": "npm run clean && webpack --json"
+    "dist": "npm run clean && webpack --json > dist/perf.json"
   },
   "repository": {
     "type": "git",
