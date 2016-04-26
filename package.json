@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "clean": "rimraf dist",
+    "clean": "rimraf dist && mkdir dist",
     "dev": "npm run clean && webpack --json -w",
     "dist": "npm run clean && webpack --json > dist/perf.json"
   },
