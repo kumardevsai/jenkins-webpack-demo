@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf dist",
-    "build": "npm run clean && webpack -p --json -w"
+    "dev": "npm run clean && webpack --json -w",
+    "dist": "npm run clean && webpack -p --json"
   },
   "repository": {
     "type": "git",
