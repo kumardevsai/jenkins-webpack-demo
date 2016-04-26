@@ -5,4 +5,5 @@ console.log(__webpack_require__);
 
 $('body')
   .after($('<pre>').text(content))
-  .after($('<pre>').text(JSON.stringify(process.env, null, 2)));
+  .after($('<pre>').text(JSON.stringify(process.env, null, 2)))
+  .after($('<a>').text(process.env.BUILD_URL));
